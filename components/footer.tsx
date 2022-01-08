@@ -38,21 +38,20 @@ export default function Footer() {
     <footer className="bg-black ">
       <div className=" flex flex-col max-w-[1280px] h-[360px] py-[64px] px-[32px] mx-auto">
         <div className="flex w-[100%]">
-          <div className="flex-[1]">
+          <div className="flex-[1] h-[200px]">
             <p className="text-white font-bold text-[16px]">
               Tarabol Co ., Ltd
             </p>
             <ul className="mt-[24px] flex">
               {socialList.map((sociaItem, index) => (
-                <li key={index}>
+                <li className="mr-[28px] hover:opacity-80" key={index} >
                   <Link href={sociaItem.link}>
                     <a
-                      className="mr-[28px] mt-[20px] mb-[40px] text-white hover:opacity-80"
+                      className="mr-[20px] text-white"
                       target="_black"
                     >
                       <FontAwesomeIcon
                         icon={sociaItem.icon}
-                        style={{ fontSize: "20px" }}
                       />
                     </a>
                   </Link>
